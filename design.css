@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-size:40px;
+    color:rgba(19, 222, 168, 0.789);
+    font-weight:bolder;
+    margin-bottom:15px;
+}
+
+table{
+    margin:auto;
+    font-size: 50px;
+    border:none;
+
+}
+tbody{
+    border: 1px solid;
+    border-color: rgba(146, 161, 157, 0.479);
+}
+table tbody tr td{
+    margin-right: 20px;
+    margin-left:20px;
+    border-bottom: 3px solid;
+    border-color: rgb(125, 125, 125);
+}
+#Students{
+    color:rgb(19, 222, 168);
+    background-color: rgb(178, 183, 183);
+    font-weight: bold;
+}
+table thead tr th{
+    background-color: rgba(19, 222, 168, 0.479);
+}
+
+#last{
+    border-color: rgb(19, 222, 168);
+}
