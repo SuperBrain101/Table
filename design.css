@@ -12,30 +12,55 @@ h1{
 }
 
 table{
-    margin:auto;
+    margin:auto; /*centered table*/
     font-size: 50px;
-    border:none;
+    border-collapse:collapse;/*Schrunches table and make smaller
+    This also got rid of the white lines so me gusta!*/
+    border-radius: 25px 25px 0px 0px;/*top left & top right border ONLY*/
+    overflow: hidden; /*ensures border radius works correctly*/
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);/*create a shadow behind
+    the table almost looks 3D*/
+}
+
+table tbody tr /*per row*/{
+    border-bottom: 3px solid rgb(125, 125, 125);
 
 }
-tbody{
-    border: 1px solid;
-    border-color: rgba(146, 161, 157, 0.479);
-}
-table tbody tr td{
+
+table tbody tr td /*per cell*/{
     margin-right: 20px;
     margin-left:20px;
-    border-bottom: 3px solid;
-    border-color: rgb(125, 125, 125);
+    padding: 12px 15px; /*helped longer words not blend in to the
+    other surrounding cells*/}
+
+table tbody tr:nth-of-type(even) /*per row*/{
+    /*every even row has this design instead of just using id Students*/
+    
+    background-color: rgba(230, 218, 218,0.40);
+    
 }
-#Students{
+/*#Students{
     color:rgb(19, 222, 168);
     background-color: rgb(178, 183, 183);
     font-weight: bold;
-}
-table thead tr th{
-    background-color: rgba(19, 222, 168, 0.479);
+}*/
+table thead tr th /*per th/heading*/{
+   background-color: rgba(19, 222, 168, 0.479);
+   padding:20px; /*even background size*/
+   text-align:left; /*aligns with td's better*/
 }
 
-#last{
-    border-color: rgb(19, 222, 168);
+table tbody tr:last-of-type /*last row...*/{
+    /*added paranthesis to :last-of-type so didn't work*/
+    border-bottom: 3px solid;
+    border-color: rgb(19, 222, 168);/*didn't create a border*/
+    padding-bottom: 15px;
+    
+}
+
+table tbody tr.active-row-or-tr /*per row*/{
+    /*class active-row-or-tr will have these qualities*/
+    color:rgb(19, 222, 168);
+    background-color: rgb(178, 183, 183);
+    font-weight: bold;
 }
